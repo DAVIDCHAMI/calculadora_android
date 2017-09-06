@@ -10,71 +10,61 @@
     tools:showIn="@layout/activity_main">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Número 1"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="55dp" />
-
     <EditText
         android:id="@+id/edit_text_num1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="number"
-        android:text="Ingrese dato 1"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="90dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Número 2"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="162dp" />
+        android:hint="Number one"
+        />
 
     <EditText
         android:id="@+id/edit_text_num2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="number"
-        android:text="Ingrese dato 2"
-        tools:layout_editor_absoluteX="83dp"
-        tools:layout_editor_absoluteY="197dp" />
+        android:hint="Number two"
+        />
 
-    <Button
-        android:id="@+id/btn_sumar"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="254dp" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/btn_restar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="254dp" />
+        <Button
+            android:id="@+id/btn_sum"
+            android:textSize="15dp"
+            android:text="+"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
 
-    <Button
-        android:id="@+id/btn_dividir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="/"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="254dp" />
+        <Button
+            android:id="@+id/btn_sub"
+            android:textSize="15dp"
+            android:text="-"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
 
-    <Button
-        android:id="@+id/btn_multiplicar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="*"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="310dp" />
+        <Button
+            android:id="@+id/btn_mult"
+            android:textSize="15dp"
+            android:text="*"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/btn_div"
+            android:textSize="15dp"
+            android:text="/"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="00"
+            android:gravity="center"
+            android:textSize="120sp"
+            />
 </LinearLayout>
