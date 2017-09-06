@@ -95,7 +95,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 res = int1*int2;
                 break;
             case R.id.btn_div:
-                res = int1/int2;
+                if(int2 == 0){
+                    res = 0;
+                }else{
+                    res = int1/int2;
+                }
                 break;
         }
 
